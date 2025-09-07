@@ -333,12 +333,31 @@
 
 
 
-                <ImageView
-                    android:id="@+id/postImage"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/postpic"/>
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/postImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/postpic" />
+
+
+                    <ImageView
+                        android:id="@+id/photoNumber"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/photonumber"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="10dp"
+                         />
+
+                </RelativeLayout>
+
 
 
                 <LinearLayout
