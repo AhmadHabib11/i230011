@@ -1,15 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/callpage"
     android:layout_height="match_parent"
-    android:background="#9a5a5b"
-    >
+    android:background="#9a5a5b">
+
 
     <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/callpng"
+        android:scaleType="centerCrop"
+        android:background="@drawable/dproundsquare"
+        android:clipToOutline="true"
+    />
+    <TextView
+        android:id="@+id/callname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="30dp"
+        android:text="Mother ❤️"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/calltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/callname"
+        android:layout_marginTop="5dp"
+        android:text="03:12"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
         />
 
+    <RelativeLayout
+        android:id="@+id/callControlsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:id="@+id/callroundsqr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/callroundsqaure"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/callend"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/callend"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/volume"
+            android:layout_width="38dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="76dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/volume"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/chatbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/chatsquare"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/chatboxlines"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@id/chatbox"
+            android:layout_alignStart="@id/chatbox"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/chatboxlines"
+            android:clickable="true" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

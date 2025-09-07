@@ -5,6 +5,6 @@
     <corners android:radius="12dp" />
 
     <!-- Semi-transparent dark maroon (same as we used for login) -->
-    <solid android:color="#808d3d44" />
+    <solid android:color="#ae7675" />
 
 </shape>

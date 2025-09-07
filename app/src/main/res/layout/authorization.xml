@@ -28,16 +28,20 @@
         android:layout_marginTop="50dp" />
 
 
-    <Button
+    <TextView
         android:id="@+id/loginbutton"
         android:layout_width="350dp"
-        android:layout_height="56dp"
-        android:text="Log in"
-        android:textSize="16sp"
+        android:layout_height="55dp"
         android:background="@drawable/loginbar"
+        android:layout_marginTop="15dp"
+        android:text="Log in"
         android:layout_below="@id/profilePic"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="15sp"
+        />
 
 
     <TextView
