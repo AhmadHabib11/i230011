@@ -155,7 +155,7 @@
     <View
         android:id="@+id/top_spacer"
         android:layout_width="match_parent"
-        android:layout_height="28dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true" />
 
     <!-- Image container with bottom rounded corners -->

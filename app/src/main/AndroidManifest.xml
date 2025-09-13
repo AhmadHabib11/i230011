@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment_1">
         <activity
+            android:name=".profilevisitfollowing"
+            android:exported="false" />
+        <activity
             android:name=".storyactivity"
             android:exported="false" />
         <activity
