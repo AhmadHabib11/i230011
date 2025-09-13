@@ -20,6 +20,7 @@ class authorization : AppCompatActivity() {
         createAccountbtn.setOnClickListener {
             val intent = Intent(this, signup::class.java)
             startActivity(intent)
+            finish()
         }
 
         val switchaccs = findViewById<TextView>(R.id.switchaccounts)
@@ -27,6 +28,7 @@ class authorization : AppCompatActivity() {
         switchaccs.setOnClickListener {
             val intent = Intent(this, login::class.java)
             startActivity(intent)
+            finish()
         }
 
         val loginb = findViewById<TextView>(R.id.loginbutton)
@@ -34,6 +36,7 @@ class authorization : AppCompatActivity() {
         loginb.setOnClickListener {
             val intent = Intent(this, feedpage::class.java)
             startActivity(intent)
+            finish()
         }
 
 

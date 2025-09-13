@@ -3,41 +3,36 @@ package com.example.assignment_1
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class login : AppCompatActivity() {
+class searchpage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.searchpage)
 
-        val backarrow = findViewById<ImageView>(R.id.backArrow)
+        val notif = findViewById<ImageView>(R.id.notifIcon)
+        val home = findViewById<ImageView>(R.id.homeIcon)
+        val search = findViewById<ImageView>(R.id.searchicon21)
 
-        backarrow.setOnClickListener {
-            val intent = Intent(this, signup::class.java)
+        notif.setOnClickListener {
+            val intent = Intent(this, notifications ::class.java)
+            startActivity(intent)
+            finish()
+
+        }
+        home.setOnClickListener {
+            val intent = Intent(this, feedpage ::class.java)
             startActivity(intent)
             finish()
         }
-
-        val login = findViewById< TextView>(R.id.loginbar)
-
-        login.setOnClickListener {
-            val intent = Intent(this, feedpage::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        val signup = findViewById< TextView>(R.id.signup)
-
-        signup.setOnClickListener {
-            val intent = Intent(this, signup::class.java)
+        search.setOnClickListener {
+            val intent = Intent(this, typesearch ::class.java)
             startActivity(intent)
             finish()
         }
 
     }
 }
-

@@ -8,26 +8,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class callpage : AppCompatActivity() {
+class typesearch : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.callpage)
+        setContentView(R.layout.typesearch)
 
-        val callend = findViewById<ImageView>(R.id.callroundsqr)
-        val chat = findViewById<ImageView>(R.id.chatboxlines)
+        val cross = findViewById<ImageView>(R.id.clearIcon)
 
-        callend.setOnClickListener {
-            val intent = Intent(this, dmscreen ::class.java)
+        cross.setOnClickListener {
+            val intent = Intent(this, searchpage ::class.java)
             startActivity(intent)
             finish()
         }
-
-        chat.setOnClickListener {
-            val intent = Intent(this, chatlist ::class.java)
-            startActivity(intent)
-            finish()
-        }
-
 
     }
 }

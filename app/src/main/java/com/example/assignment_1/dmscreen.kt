@@ -1,0 +1,39 @@
+package com.example.assignment_1
+
+import android.content.Intent
+import android.os.Bundle
+import android.provider.MediaStore
+import android.widget.ImageView
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+
+class dmscreen : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.dmscreen)
+        val img = findViewById<ImageView>(R.id.gallery)
+
+
+        val vidcall = findViewById<ImageView>(R.id.vidcall)
+
+        val backarrow = findViewById<ImageView>(R.id.backArrow)
+
+        vidcall.setOnClickListener {
+            val intent = Intent(this, callpage ::class.java)
+            startActivity(intent)
+        }
+
+        img.setOnClickListener {
+            val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+            startActivity(intent)  // Just opens gallery
+        }
+        backarrow.setOnClickListener {
+            val intent = Intent(this, chatlist ::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+    }
+}

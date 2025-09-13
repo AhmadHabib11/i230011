@@ -12,6 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment_1">
         <activity
+            android:name=".editprofile"
+            android:exported="false" />
+        <activity
+            android:name=".highlight"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".dmscreen"
+            android:exported="false" />
+        <activity
+            android:name=".typesearch"
+            android:exported="false" />
+        <activity
+            android:name=".searchpage"
+            android:exported="false" />
+        <activity
+            android:name=".notifications2"
+            android:exported="false" />
+        <activity
+            android:name=".notifications"
+            android:exported="false" />
+        <activity
+            android:name=".chatlist"
+            android:exported="false" />
+        <activity
             android:name=".authorization"
             android:exported="false" />
         <activity
@@ -26,7 +53,6 @@
         <activity
             android:name=".feedpage"
             android:exported="false" /> <!-- <activity -->
-
         <activity
             android:name=".coverscreen"
             android:exported="true">

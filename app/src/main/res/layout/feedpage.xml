@@ -612,7 +612,7 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/shopIcon"
+                    android:id="@+id/notifIcon"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/heart"
