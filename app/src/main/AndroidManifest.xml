@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment_1">
         <activity
+            android:name=".storyactivity"
+            android:exported="false" />
+        <activity
+            android:name=".storyupload"
+            android:exported="false" />
+        <activity
+            android:name=".storyview"
+            android:exported="false" />
+        <activity
+            android:name=".camera"
+            android:exported="false" />
+        <activity
+            android:name=".createpost"
+            android:exported="false" />
+        <activity
             android:name=".editprofile"
             android:exported="false" />
         <activity

@@ -24,4 +24,10 @@
     <string name="h2"><b><font color="#FFFFFF">Artist</font></b><font color="#FFFFFF"> . Song Title ></font></string>
 
 
+    <string name="bio">Digital goodies designer <font color="#9b5a5a">@pixellz</font> Everything is designed</string>
+
+    <string name="s1"><font color="#FFFFFF">craig_love </font> <font color="#D3D3D3">4h</font></string>
+
+    <string name="storydm"><font color="#9b5a5a">Send Message</font></string>
+
 </resources>

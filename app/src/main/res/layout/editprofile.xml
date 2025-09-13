@@ -44,8 +44,8 @@
                     android:layout_height="wrap_content"
                     android:text="Cancel"
                     android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:textColor="#222222"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true" />
 
@@ -65,8 +65,8 @@
                     android:layout_height="wrap_content"
                     android:text="Done"
                     android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:textColor="#b23131"
+                    android:textSize="18sp"
+                    android:textColor="#9b5a5a"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true" />
             </RelativeLayout>
@@ -94,12 +94,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Change Profile Photo"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#b23131"
+                    android:textColor="#9b5a5a"
                     android:layout_marginTop="8dp" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
 
             <!-- Name -->
             <LinearLayout
@@ -113,8 +117,7 @@
                     android:layout_height="wrap_content"
                     android:text="Name"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="14sp" />
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/name"
@@ -123,11 +126,12 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:text="Jacob West"
-                    android:textSize="16sp"
+                    android:textSize="17sp"
                     android:padding="6dp" />
             </LinearLayout>
 
             <View
+                android:layout_marginStart="115dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#e0e0e0" />
@@ -143,8 +147,8 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:text="Username"
-                    android:textColor="#777777"
-                    android:textSize="14sp" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/username"
@@ -153,11 +157,12 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:text="jacob_w"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:padding="6dp" />
             </LinearLayout>
 
             <View
+                android:layout_marginStart="115dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#e0e0e0" />
@@ -173,8 +178,8 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:text="Website"
-                    android:textColor="#777777"
-                    android:textSize="14sp" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/website"
@@ -183,11 +188,12 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:hint="Website"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:padding="6dp" />
             </LinearLayout>
 
             <View
+                android:layout_marginStart="115dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#e0e0e0" />
@@ -210,8 +216,8 @@
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:text="Bio"
-                        android:textColor="#777777"
-                        android:textSize="14sp" />
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/bio"
@@ -219,10 +225,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@null"
-                        android:inputType="textMultiLine"
-                        android:minLines="2"
-                        android:text="Digital goodies designer @pixsellz\nEverything is designed."
-                        android:textSize="15sp"
+                        android:text="@string/bio"
+                        android:textSize="16sp"
                         android:padding="6dp" />
                 </LinearLayout>
 
@@ -239,10 +243,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Switch to Professional Account"
-                android:textColor="#b23131"
+                android:textColor="#9b5a5a"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <!-- Private Information header -->
             <TextView
@@ -251,7 +255,7 @@
                 android:layout_height="wrap_content"
                 android:text="Private Information"
                 android:textStyle="bold"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:paddingTop="6dp"
                 android:paddingBottom="6dp" />
 
@@ -266,8 +270,8 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:text="Email"
-                    android:textColor="#777777"
-                    android:textSize="14sp" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/email"
@@ -282,6 +286,7 @@
             </LinearLayout>
 
             <View
+                android:layout_marginStart="115dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#e0e0e0" />
@@ -297,8 +302,8 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:text="Phone"
-                    android:textColor="#777777"
-                    android:textSize="14sp" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/phone"
@@ -313,6 +318,7 @@
             </LinearLayout>
 
             <View
+                android:layout_marginStart="115dp"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#e0e0e0" />
@@ -328,8 +334,8 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:text="Gender"
-                    android:textColor="#777777"
-                    android:textSize="14sp" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/gender"
@@ -338,14 +344,17 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:text="Male"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:padding="6dp" />
             </LinearLayout>
 
             <View
+                android:layout_marginStart="115dp"
                 android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:background="@android:color/transparent" />
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+
 
         </LinearLayout>
     </ScrollView>
