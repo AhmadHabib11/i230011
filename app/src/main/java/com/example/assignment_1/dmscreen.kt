@@ -25,6 +25,7 @@ class dmscreen : AppCompatActivity() {
         vidcall.setOnClickListener {
             val intent = Intent(this, callpage ::class.java)
             startActivity(intent)
+            finish()
         }
 
         img.setOnClickListener {
