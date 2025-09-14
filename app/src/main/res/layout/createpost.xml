@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/createpost"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
@@ -130,8 +130,119 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/n1"
                 android:layout_margin="1dp" />
-            <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img2" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img3" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img4" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img5" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img6" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img7" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img8" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img9" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img10" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/img11" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/n1" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/n2" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/n3" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/n4" android:layout_margin="1dp" /> <ImageView android:layout_width="0dp" android:layout_height="100dp" android:layout_columnWeight="1" android:scaleType="centerCrop" android:src="@drawable/n5" android:layout_margin="1dp" />
-            <!-- Add more images here... -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img2"
+                android:layout_margin="1dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img3"
+                android:layout_margin="1dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img4"
+                android:layout_margin="1dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img5"
+                android:layout_margin="1dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img6"
+                android:layout_margin="1dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img7"
+                android:layout_margin="1dp"
+                />
+            <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img8"
+            android:layout_margin="1dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img9"
+                android:layout_margin="1dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img10"
+                android:layout_margin="1dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img11"
+                android:layout_margin="1dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/n1"
+                android:layout_margin="1dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/n2"
+                android:layout_margin="1dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/n3"
+                android:layout_margin="1dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/n4"
+                android:layout_margin="1dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/n5"
+                android:layout_margin="1dp" />
+
+
         </GridLayout>
     </ScrollView>
 
@@ -147,6 +258,7 @@
         android:layout_marginBottom="30dp">
 
         <TextView
+            android:id="@+id/library"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

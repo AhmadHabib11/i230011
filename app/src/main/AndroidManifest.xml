@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment_1">
         <activity
+            android:name=".profvisitnofollow"
+            android:exported="false" />
+        <activity
             android:name=".profilevisitfollowing"
             android:exported="false" />
         <activity
@@ -28,7 +31,8 @@
             android:exported="false" />
         <activity
             android:name=".createpost"
-            android:exported="false" />
+            android:exported="false"
+            />
         <activity
             android:name=".editprofile"
             android:exported="false" />

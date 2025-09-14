@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root"
+    android:id="@+id/profilevisitfollowing"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
@@ -50,15 +50,15 @@
                         android:layout_height="wrap_content"
                         android:text="kyan.coleman"
                         android:textColor="#000000"
-                        android:layout_marginEnd="6dp"
+                        android:layout_marginEnd="0dp"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
                     <ImageView
                         android:id="@+id/downIcon"
-                        android:layout_width="14dp"
-                        android:layout_height="14dp"
-                        android:src="@drawable/downarrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/bluetick"
                         android:layout_marginTop="2dp" />
                 </LinearLayout>
 
@@ -68,7 +68,7 @@
                     android:layout_height="26dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/menu" />
+                    android:src="@drawable/blackmore" />
             </RelativeLayout>
 
             <!-- PROFILE HEADER (DP, stats, name, bio, action buttons, highlights) -->
@@ -101,7 +101,7 @@
                             android:background="@drawable/profilestorycircle"
                             android:padding="6dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/story1" />
+                            android:src="@drawable/p6" />
                     </FrameLayout>
 
                     <LinearLayout
@@ -130,7 +130,7 @@
                                 android:id="@+id/postsLabel"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Posts"
+                                android:text="posts"
                                 android:textSize="15sp" />
                         </LinearLayout>
 
@@ -153,7 +153,7 @@
                                 android:id="@+id/followersLabel"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Followers"
+                                android:text="followers"
                                 android:textSize="15sp" />
                         </LinearLayout>
 
@@ -176,7 +176,7 @@
                                 android:id="@+id/followingLabel"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Following"
+                                android:text="following"
                                 android:textSize="15sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -196,7 +196,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:background="@drawable/rounded_bar"
+                    android:background="@drawable/profvisbar"
                     android:orientation="horizontal"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="4dp">
@@ -204,8 +204,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="kyan.coleman"
-                        android:textColor="#000000"
+                        android:text="/@ kyan.coleman"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:textSize="14sp" />
                 </LinearLayout>
 
@@ -215,7 +216,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Blogger"
-                    android:textSize="14sp" />
+                    android:textColor="#A9A9A9"
+                    android:textSize="14sp"
+
+                    />
 
                 <TextView
                     android:id="@+id/bioLine2"
@@ -223,7 +227,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="6dp"
-                    android:text="At zero eos et accusamus et lusto odio dignissimos ducimus qui blanditis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecat...more"
+                    android:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prasentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecat... more"
                     android:textSize="14sp" />
 
                 <TextView
@@ -231,8 +235,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
-                    android:text="kyan.co"
-                    android:textColor="#00376B"
+                    android:text=" 🔗 kyan.co"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
                 <!-- Followed by with profile image -->
@@ -244,17 +249,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
                         android:layout_marginEnd="4dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/story1" />
+
+                        android:src="@drawable/activityavs" />
 
                     <TextView
                         android:id="@+id/followedByText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Followed by your friend, another friend and 297 others"
+                        android:text="@string/p1"
                         android:textSize="14sp" />
                 </LinearLayout>
 
@@ -271,7 +276,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginEnd="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/editprofilebar"
+                        android:background="@drawable/profvisbar"
                         android:gravity="center"
                         android:orientation="horizontal">
 
@@ -287,7 +292,7 @@
                             android:layout_width="16dp"
                             android:layout_height="16dp"
                             android:layout_marginStart="4dp"
-                            android:src="@drawable/downarrow" />
+                            android:src="@drawable/arrdownblack" />
                     </LinearLayout>
 
                     <TextView
@@ -297,7 +302,7 @@
                         android:layout_marginStart="4dp"
                         android:layout_marginEnd="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/editprofilebar"
+                        android:background="@drawable/profvisbar"
                         android:gravity="center"
                         android:text="Message"
                         android:textColor="#000000"
@@ -311,7 +316,7 @@
                         android:layout_marginStart="4dp"
                         android:layout_marginEnd="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/editprofilebar"
+                        android:background="@drawable/profvisbar"
                         android:gravity="center"
                         android:text="Email"
                         android:textColor="#000000"
@@ -323,13 +328,13 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="4dp"
                         android:layout_weight="0.3"
-                        android:background="@drawable/editprofilebar"
+                        android:background="@drawable/profvisbar"
                         android:gravity="center">
 
                         <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/profile_plus" />
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/useradd" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -358,12 +363,13 @@
                             android:orientation="vertical">
 
                             <ImageView
+                                android:id="@+id/h1"
                                 android:layout_width="72dp"
                                 android:layout_height="72dp"
                                 android:background="@drawable/profilestorycircle"
                                 android:padding="5dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/highlight1" />
+                                android:src="@drawable/h1" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -372,7 +378,7 @@
                                 android:text="Highlight 1"
                                 android:textColor="#000000"
                                 android:textSize="12sp"
-                                android:textStyle="bold" />
+                                />
                         </LinearLayout>
 
                         <LinearLayout
@@ -382,12 +388,13 @@
                             android:orientation="vertical">
 
                             <ImageView
+                                android:id="@+id/h2"
                                 android:layout_width="72dp"
                                 android:layout_height="72dp"
                                 android:background="@drawable/profilestorycircle"
                                 android:padding="5dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/highlight2" />
+                                android:src="@drawable/h2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -396,7 +403,7 @@
                                 android:text="Highlight 2"
                                 android:textColor="#000000"
                                 android:textSize="12sp"
-                                android:textStyle="bold" />
+                                 />
                         </LinearLayout>
 
                         <LinearLayout
@@ -406,21 +413,22 @@
                             android:orientation="vertical">
 
                             <ImageView
+                                android:id="@+id/h3"
                                 android:layout_width="72dp"
                                 android:layout_height="72dp"
                                 android:background="@drawable/profilestorycircle"
                                 android:padding="5dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/highlight3" />
+                                android:src="@drawable/h3" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
                                 android:text="Highlight 3"
-                                android:textColor="#000000"
+
                                 android:textSize="12sp"
-                                android:textStyle="bold" />
+                                 />
                         </LinearLayout>
 
                         <LinearLayout
@@ -430,21 +438,21 @@
                             android:orientation="vertical">
 
                             <ImageView
+                                android:id="@+id/h4"
                                 android:layout_width="72dp"
                                 android:layout_height="72dp"
                                 android:background="@drawable/profilestorycircle"
                                 android:padding="5dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/highlight4" />
+                                android:src="@drawable/p3" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
                                 android:text="Highlight 4"
-                                android:textColor="#000000"
                                 android:textSize="12sp"
-                                android:textStyle="bold" />
+                                 />
                         </LinearLayout>
 
                         <LinearLayout
@@ -454,21 +462,20 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:layout_width="72dp"
-                                android:layout_height="72dp"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
                                 android:background="@drawable/profilestorycircle"
                                 android:padding="25dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/add" />
+                                android:src="@drawable/blackplus" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
                                 android:text="New"
-                                android:textColor="#000000"
                                 android:textSize="12sp"
-                                android:textStyle="bold" />
+                                 />
                         </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -495,7 +502,7 @@
                         android:id="@+id/gridIcon"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/grid" />
+                        android:src="@drawable/blackgrid" />
 
                     <!-- underline spans full tab width -->
                     <View
@@ -503,7 +510,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginTop="4dp"
-                        android:background="#B00020" />
+                        android:background="@color/black" />
                 </LinearLayout>
 
                 <!-- Right column: CONTACT -->
@@ -623,7 +630,7 @@
                     android:id="@+id/searchIcon"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/filledsearch"
+                    android:src="@drawable/search"
                     android:scaleType="centerInside"
                     android:clickable="true" />
             </LinearLayout>

@@ -124,6 +124,7 @@
                 android:padding="10dp">
 
                 <ImageView
+                    android:id="@+id/p1"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:src="@drawable/p1"
@@ -140,6 +141,7 @@
                     android:textColor="@color/black"/>
 
                 <ImageView
+                    android:id="@+id/post1"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/n2img1"
@@ -163,7 +165,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp" />
 
-            <!-- Example: multiple likes -->
+            <!--  multiple likes -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -187,6 +189,7 @@
                     android:textColor="@color/black"/>
 
                 <ImageView
+                    android:id="@+id/post2"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/n2img1"
@@ -219,6 +222,7 @@
 
                 <!-- Left Profile Image -->
                 <ImageView
+                    android:id="@+id/p2"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:src="@drawable/p7"
@@ -265,6 +269,7 @@
                 android:padding="10dp">
 
                 <ImageView
+                    android:id="@+id/p3"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:src="@drawable/p2"
@@ -299,6 +304,7 @@
                 android:padding="10dp">
 
                 <ImageView
+                    android:id="@+id/p4"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:src="@drawable/p5"
@@ -332,6 +338,7 @@
                 android:padding="10dp">
 
                 <ImageView
+                    android:id="@+id/p5"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:src="@drawable/n2a"
@@ -376,7 +383,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp" />
 
-            <!-- Example follower with Message -->
+            <!-- -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -384,6 +391,7 @@
                 android:padding="10dp">
 
                 <ImageView
+                    android:id="@+id/p6"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:src="@drawable/n2img3"
@@ -412,7 +420,7 @@
                     android:background="@drawable/notif2msgbar"/>
             </LinearLayout>
 
-            <!-- Example follower with Follow -->
+            <!--  -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -420,6 +428,7 @@
                 android:padding="10dp">
 
                 <ImageView
+                    android:id="@+id/p7"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:src="@drawable/p6"
@@ -450,7 +459,7 @@
             </LinearLayout>
 
 
-            <!-- Follower with Follow -->
+
 
         </LinearLayout>
     </ScrollView>

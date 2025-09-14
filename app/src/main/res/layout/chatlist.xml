@@ -153,7 +153,7 @@
 
                     <!-- Camera on right -->
                     <ImageView
-                        android:id="@+id/camera"
+                        android:id="@+id/camera1"
                         android:layout_width="28dp"
                         android:layout_height="28dp"
                         android:src="@drawable/chatcam"
@@ -443,6 +443,7 @@
             android:padding="12dp">
 
             <ImageView
+                android:id="@+id/cambottom"
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:src="@drawable/filledcamera"

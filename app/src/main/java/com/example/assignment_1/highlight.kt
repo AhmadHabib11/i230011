@@ -1,6 +1,9 @@
 package com.example.assignment_1
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +14,39 @@ class highlight : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.highlight)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val close = findViewById<ImageView>(R.id.closeIcon)
+        close.setOnClickListener {
+            val intent = Intent(this, profile::class.java)
+            startActivity(intent)
+            finish()
         }
+
+        val createcam = findViewById<LinearLayout>(R.id.createvid)
+        createcam.setOnClickListener {
+            val intent = Intent(this, camera::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val create = findViewById<LinearLayout>(R.id.createpost)
+        create.setOnClickListener {
+            val intent = Intent(this, createpost::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val send = findViewById<LinearLayout>(R.id.send)
+        send.setOnClickListener {
+            val intent = Intent(this, chatlist::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+
+
+
+
+
     }
 }

@@ -3,17 +3,17 @@ package com.example.assignment_1
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class profilevisitfollowing : AppCompatActivity() {
+class profvisitnofollow : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.profilevisitfollowing)
+        setContentView(R.layout.profvisitnofollow)
+
 
         val search = findViewById<ImageView>(R.id.searchIcon)
         val notif = findViewById<ImageView>(R.id.notifIcon)
@@ -71,6 +71,13 @@ class profilevisitfollowing : AppCompatActivity() {
 
 
 
+        val followbtn = findViewById<LinearLayout>(R.id.followButton)
+        followbtn.setOnClickListener {
+            val intent = Intent(this, profilevisitfollowing::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         val msg = findViewById<TextView>(R.id.messageButton)
         msg.setOnClickListener {
             val intent = Intent(this, dmscreen::class.java)
@@ -91,7 +98,6 @@ class profilevisitfollowing : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
 
     }
 }

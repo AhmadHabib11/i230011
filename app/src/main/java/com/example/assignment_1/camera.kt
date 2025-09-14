@@ -1,6 +1,9 @@
 package com.example.assignment_1
 
+import android.content.Intent
 import android.os.Bundle
+import android.provider.MediaStore
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +14,22 @@ class camera : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.camera)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val close = findViewById<ImageView>(R.id.closeIcon)
+        close.setOnClickListener {
+            val intent = Intent(this, feedpage::class.java)
+            startActivity(intent)
+            finish()
         }
+        val shuttenbtn = findViewById<ImageView>(R.id.shutterButton)
+        shuttenbtn.setOnClickListener {
+            val intent = Intent(this, storyupload::class.java)
+            startActivity(intent)
+            finish()
+        }
+//        val library = findViewById<ImageView>(R.id.galleryIcon)
+//        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+//        startActivity(intent)  // Just opens gallery
+
     }
 }

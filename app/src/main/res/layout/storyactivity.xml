@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/highlight"
+    android:id="@+id/storyactivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="@color/black">
 
-    <!-- Spacer for notch/status bar -->
+    <!-- Space above -->
     <LinearLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -48,6 +48,7 @@
 
         <!-- Create Post -->
         <LinearLayout
+            android:id="@+id/createvid"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -92,6 +93,7 @@
 
         <!-- Send -->
         <LinearLayout
+            android:id="@+id/highlight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -225,6 +227,14 @@
 
             </LinearLayout>
         </LinearLayout>
+        <ImageView
+            android:id="@+id/closeIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/closeicon"
+            android:layout_gravity="end"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="12dp" />
     </FrameLayout>
 
     <!-- Hearts -->

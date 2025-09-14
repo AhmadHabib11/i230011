@@ -105,6 +105,7 @@
                 android:padding="9dp">
 
                 <ImageView
+                    android:id="@+id/yourstory"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:src="@drawable/story1"
@@ -133,6 +134,7 @@
                 android:padding="9dp">
 
                 <ImageView
+                    android:id="@+id/story1"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:src="@drawable/story2"
@@ -160,6 +162,7 @@
                 android:padding="9dp">
 
                 <ImageView
+                    android:id="@+id/story2"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:src="@drawable/story3"
@@ -187,6 +190,7 @@
                 android:padding="9dp">
 
                 <ImageView
+                    android:id="@+id/story3"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:src="@drawable/story4"
@@ -214,6 +218,7 @@
                 android:padding="9dp">
 
                 <ImageView
+                    android:id="@+id/story4"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:src="@drawable/story5"

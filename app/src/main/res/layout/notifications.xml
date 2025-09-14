@@ -110,6 +110,7 @@
 
                 <!-- profile pic -->
                 <ImageView
+                    android:id="@+id/p1"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/p1"
@@ -117,7 +118,7 @@
                     android:layout_marginRight="12dp"
                     />
 
-                <!-- right column: text + 3 thumbnails -->
+                <!--  -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -169,7 +170,7 @@
                 android:layout_height="1dp"
                 android:background="#f0f0f0"/>
 
-            <!-- 2) liked joshua_l. (single thumbnail aligned to the right) -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -193,7 +194,7 @@
                     android:textSize="15sp"
                     android:textColor="@color/black"/>
 
-                <!-- single thumbnail -->
+
                 <ImageView
                     android:layout_width="62dp"
                     android:layout_height="62dp"
@@ -207,7 +208,7 @@
                 android:layout_height="1dp"
                 android:background="#f0f0f0"/>
 
-            <!-- 3) started following (no thumbnail) -->
+            <!-- 3) started following  -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -216,6 +217,7 @@
                 android:paddingBottom="12dp">
 
                 <ImageView
+                    android:id="@+id/p2"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:src="@drawable/p4"
@@ -236,7 +238,7 @@
                 android:layout_height="1dp"
                 android:background="#f0f0f0"/>
 
-            <!-- 4) craig_love liked 8 posts. (grid of thumbnails under text) -->
+            <!-- 4) craig_love liked 8 posts.  -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -245,6 +247,7 @@
                 android:paddingBottom="12dp">
 
                 <ImageView
+                    android:id="@+id/p3"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/p7"
@@ -403,6 +406,7 @@
                 android:paddingBottom="12dp">
 
                 <ImageView
+                    android:id="@+id/p4"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:src="@drawable/p1"
@@ -435,6 +439,7 @@
 
                 <!-- profile pic -->
                 <ImageView
+                    android:id="@+id/p5"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/p5"
@@ -450,6 +455,7 @@
                     android:orientation="vertical">
 
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/notif1_text8"

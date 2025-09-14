@@ -1,6 +1,9 @@
 package com.example.assignment_1
 
+import android.content.Intent
 import android.os.Bundle
+import android.provider.MediaStore
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +14,31 @@ class editprofile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.editprofile)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val cancel = findViewById<TextView>(R.id.cancelBtn)
+        cancel.setOnClickListener {
+            val intent = Intent(this, profile::class.java)
+            startActivity(intent)
+            finish()
+
         }
+
+        val done = findViewById<TextView>(R.id.doneBtn)
+        done.setOnClickListener {
+            val intent = Intent(this, profile::class.java)
+            startActivity(intent)
+            finish()
+
+        }
+
+        val changedp = findViewById<TextView>(R.id.changePhoto)
+        changedp.setOnClickListener {
+            val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+            startActivity(intent)  // Just opens gallery
+        }
+
+
+
+
     }
 }
